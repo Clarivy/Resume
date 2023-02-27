@@ -1,0 +1,65 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
+
+%====================
+% File:         resume.tex
+% Modifying author2:       https://github.com/mengisok 
+% Last Updated: Oct 29, 2022
+% Notes:        I edited again on the version of @gobborg      
+%====================
+
+%====================
+% File:         resume.tex
+% Modifying author1:       https://github.com/gobborg 
+% Last Updated: Dec 26, 2021
+% Notes:        I just made it prettier and better suited to
+%               my needs.
+%====================
+
+%====================
+% File:         resume.tex
+% Original author:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Qingcheng Zhao} 
+\def\phone{+86 153 8750 1026}
+\def\city{Shanghai}
+\def\email{zhaoqch1@shanghaitech.edu.cn}
+\def\github{Clarivy} % github username
+
+\begin{document}
+\import{sections/}{_header}
+\vspace*{10pt}
+
+\section{Education}
+\import{sections/}{education}
+\vspace*{10pt}
+
+\section{Experience}
+\import{sections/}{experience}
+\vspace*{10pt}
+
+\section{Awards}
+\vspace*{3pt}
+\import{sections/}{awards}
+\vspace*{10pt}
+
+\section{Skills}
+\vspace*{3pt}
+\import{sections/}{skills}
+\vspace*{10pt}
+
+\end{document}
