@@ -1,65 +1,129 @@
-\documentclass[letter,10pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{CJKutf8}
-\usepackage{tabularx}
-\usepackage{array}
+% !TEX program = xelatex
 
-%====================
-% File:         resume.tex
-% Modifying author2:       https://github.com/mengisok 
-% Last Updated: Oct 29, 2022
-% Notes:        I edited again on the version of @gobborg      
-%====================
-
-%====================
-% File:         resume.tex
-% Modifying author1:       https://github.com/gobborg 
-% Last Updated: Dec 26, 2021
-% Notes:        I just made it prettier and better suited to
-%               my needs.
-%====================
-
-%====================
-% File:         resume.tex
-% Original author:       https://github.com/TimmyChan 
-%               https://www.linkedin.com/in/timmy-l-chan/
-% Last Updated: Nov 19, 2021
-% Notes:        All formatting is done in TLCresume.sty
-%               No need to touch that file. 
-%               All actual content is in the sections/ folder.
-%====================
-
-\usepackage{TLCresume}
-
-%====================
-% CONTACT INFORMATION
-%====================
-\author{Qingcheng Zhao} 
-\def\phone{+86 153 8750 1026}
-\def\city{Shanghai}
-\def\email{zhaoqch1@shanghaitech.edu.cn}
-\def\github{Clarivy} % github username
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
-\import{sections/}{_header}
-\vspace*{10pt}
+\pagenumbering{gobble} % suppress displaying page number
 
-\section{Education}
-\import{sections/}{education}
-\vspace*{10pt}
+\name{Qingcheng Zhao}
 
-\section{Experience}
-\import{sections/}{experience}
-\vspace*{10pt}
+\basicInfo{
+  \email{zhaoqch1@shanghaitech.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 153-875-01026} \textperiodcentered\ 
+  \github[clarivy]{https://github.com/Clarivy} \textperiodcentered\
+  \homepage[blog]{http://clarivy.github.io/}
+}
 
-\section{Awards}
-\vspace*{3pt}
-\import{sections/}{awards}
-\vspace*{10pt}
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{ShanghaiTech University}, Shanghai, China}{2021 -- Present}
+\textit{Bachelor of Engineering} in Computer Science. Expected graduation date: June 2025\par
+\begin{itemize}
+	\item Overall GPA 3.71/4, ranked 19/179
+	\item Major GPA 4.0/4.0.
+	\item CS major courses taken:
+	      \begin{description}
+          \item[SI100B] Introduction to Information Science and Technology, A+
+		      \item[CS100] Introduction to computer programming, A+
+		      \item[CS131] Compilers, A+
+		      \item[CS101] Algorithms and Data Structures, A
+		      \item[CS177H] Bioinformatics: Software Development and Applications, A
+	      \end{description}
+\end{itemize}
 
-\section{Skills}
-\vspace*{3pt}
-\import{sections/}{skills}
-\vspace*{10pt}
 
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{DJI Technology Co., Ltd.} Shanghai, China}{Jun.2022 -- Nov.2022}
+\role{Test Development Engineer (Internship)}
+
+\begin{itemize}
+  \item Built a Qt application utilizing ADB to collect, analyze, and visualize data from drones, resulting in improved data insights and decision-making for stakeholders.
+  \item Developed a real-time visualization analyzer to collect and analyze 2.4Ghz, 5.2Ghz, and 5.8Ghz freq scan data from drones, enabling more accurate data interpretation.
+  \item Utilized parallel computing techniques to speed up data processing and visualization, resulting in more efficient data analysis and a faster feedback loop.
+  \item Profiled and optimized the existing system, resulting in improved application performance and reduced processing time for data analysis.
+  \end{itemize}
+
+\datedsubsection{\textbf{Deemos Technologies Inc. } Shanghai, China}{Nov. 2022 -- Present}
+\role{Software Engineer (Internship)}
+
+\begin{itemize}
+  \item Created a real-time 3D interactive avatar system demo utilizing audio-driven facial expression technologies, which was showcased to over 1,000 attendees at a tech conference, resulting in positive feedback and increased interest in the technology.
+  \item Lead the development of hyperhuman frontend, which is a web-based application that allows users to create/edit/animate/stylize 3D digital humans in the HYPERHUMAN platform, features include:
+  \begin{itemize}
+    \item Using on a prompt, generate and edit 3D digital avatar models with high-fidelity PBR textures. 
+    \item From a single photo, generate and edit 3D digital avatar models with high-fidelity PBR textures.
+    \item Automatic binding and RGB-video-based dirving based on massive 4D and expression data.(Zhang, Longwen, et al. "Video-driven Neural Physically-based Facial Asset for Production." SIGGRAPH Asia (2022))
+    \item Multilingual audio-driven 3D digital avatar.
+    \item Convenient stylization tool for 3D digital humans.
+    \item Automatic topology conversion.
+  \end{itemize}
+   view the demo at \homepage[twitter]{https://twitter.com/DeemosTech/status/1629871131816775681}.
+\end{itemize}
+
+\datedsubsection{\textbf{Multi-disciplinary Artificial Reality Studio}}{ Mar. 2022 - Present}
+\role{Undergraduate Researcher}
+
+\begin{itemize}
+  \item Developed and implemented a high-precision color correction system for 3D scanning images, achieving an average color error rate of less than 1\%, resulting in improved accuracy and resolution for the images.
+  \item Built an AI model using Nvidia StyleGAN2 and Pix2PixHD to synthesize high-quality 3D models textures from 2D images.
+  \item Build an audio to 3D facial motion synthesis system, which can generate a sequence of realistic 3D facial motions with accurate lip movements given an audio input and a neutral 3D face mesh.
+\end{itemize}
+
+\datedsubsection{\textbf{GeekPie Association}}{Sep. 2021 - Present}
+\role{President of GeekPie Association}
+
+\begin{itemize}
+  \item Developed a highly regarded web application that simplifies the course selection process for all students at ShanghaiTech University. People can comment and discuss freely at our platform. Check it out at \homepage[coursebench]{https://coursebench.geekpie.club/}.
+  \item Designed and built the frontend for G22G (also known as GeekPie 2022 Game), a popular web-based game that has received positive feedback from players. Check it out at \homepage[G22G]{http://g22g.geekpie.club/}.
+  \item Created a visually appealing course scheduling web application that simplifies the process of creating and customizing schedules. Check it out at \homepage[CousePrettier]{http://prettier.geekpie.club/} or view the documentation at \homepage[documentation]{https://clarivy.github.io/posts/courseprettier/courseprettier/}.
+  \item Designed and developed the homepage for the Frontier of Life Science and Technology ShanghaiTech University (FoLST2021) conference, helping to increase awareness and participation in the event. Check out the source code at \homepage[github]{https://github.com/Clarivy/FoLST2021}.
+\end{itemize}
+
+\datedsubsection{\textbf{Teaching Assistant, CS100}}{Feb. 2023 - Present}
+\role{Senior Teaching Assistant}
+
+\begin{itemize}
+  \item Carry out weekly recitation.
+  \item In charge of setting four programming assignments.
+\end{itemize}
+
+ 
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: Python > C++ >= Javascript == Typescript > C
+  \item Development:
+    \begin{itemize}
+      \item Web Development: Vue2 > React > Vue3 | Node.js, Gradio, HTML, CSS, Next.js, Vite.js, Three.js
+      \item Backend: FastAPI, Uvicorn
+      \item DevOps: Rancher, Docker, Kubernetes, Gitlab CI/CD, Github Actions
+      \item Tools: PyTorch, OpenCV, Blender
+    \end{itemize}
+  Web, Backend, Desktop Application, DevOps,
+  \item Platform: Linux, Windows
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{Bronze Medal}, Award on The 2021 China Collegiate Programming Contest, Harbin Site }{2021}
+\datedline{\textit{One-hundred Fourth Place}, Award on The 2021 ICPC Asia-East Continent Final Contest}{2021}
+\datedline{\textit{First Prize}Shanghai Makers Contest}{2021}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Blog: http://your.blog.me
+  \item GitHub: https://github.com/username
+  \item Languages: English - Fluent, Mandarin - Native speaker
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
 \end{document}
