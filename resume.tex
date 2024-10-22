@@ -36,46 +36,61 @@ My primary research interest lies in \textbf{3D Vision}, with a specific focus o
 \section{\faBook\ Publications}
 
 \begin{itemize}
-  \item {\small \href{https://dl.acm.org/doi/10.1145/3641519.3657413}{Media2Face}: Co-speech Facial Animation Generation With Multi-Modality Guidance} \hfill{\textbf{SIGGRAPH 2024}}\\
-  \textit{\footnotesize \textbf{Qingcheng Zhao*}, Pengyu Long*, Qixuan Zhang, Dafei Qin, Han Liang, Longwen Zhang, Yingliang Zhang, Jingyi Yu, Lan Xu}\\
-  \textit{(\href{https://sites.google.com/view/media2face}{\color{blue}{Project Page}})}
-  \textit{(\href{https://dl.acm.org/doi/10.1145/3641519.3657413}{\color{blue}{Paper}})}
+  \item {\small \cite{10.1145/3641519.3657413} Media2Face: Co-speech Facial Animation Generation With Multi-Modality Guidance} \hfill{\textbf{SIGGRAPH 2024}}\\
+        \textit{\footnotesize \textbf{Qingcheng Zhao*}, Pengyu Long*, Qixuan Zhang, Dafei Qin, Han Liang, Longwen Zhang, Yingliang Zhang, Jingyi Yu, Lan Xu}\\
+        \textit{(\href{https://sites.google.com/view/media2face}{\color{blue}{Project Page}})}
+        \textit{(\href{https://dl.acm.org/doi/10.1145/3641519.3657413}{\color{blue}{Paper}})}
 \end{itemize}
 
 
 
-\section{\faUsers\ Experience}
+\section{\faFlask\ Research Experience}
 
 \datedsubsection{\textbf{ShanghaiTech University}}{ Mar. 2022 - Present}
-\role{Undergraduate Researcher. Advised by \href{http://www.yu-jingyi.com/}{Prof. Jingyi Yu} and \href{https://www.xu-lan.com/}{Prof. Lan Xu}}
+\role{Research Assistant. Advised by \href{https://scholar.google.com/citations?user=R9L_AfQAAAAJ}{Prof. Jingyi Yu} and \href{https://scholar.google.de/citations?user=aPS5pJkAAAAJ}{Prof. Lan Xu}}
 
-First author and presenter of \href{https://dl.acm.org/doi/10.1145/3641519.3657413}{Media2Face} at \href{https://s2024.conference-program.org/presentation/?id=papers_294&sess=sess116}{\textbf{SIGGRAPH 2024}}.
-Media2Face can generate highly realistic and expressive 3D facial animations from diverse multimedia inputs—audio, text, and images, trained on the largest ever co-speech 3D facial animation dataset.
+\datedline{\textbf{\small Co-speech Facial Animation Generation With Multi-Modality Guidance}}{SIGGRAPH 2024}
+
+\begin{itemize}
+  \item Proposed a diffusion model in latent motion space for co-speech facial animation generation, accepting rich multi-modality guidance.
+  \item Build an efficient variational auto-encoder mapping facial geometry and images to a highly generalized and decoupled expression latent space for expressions and identities.
+  \item Achieved state-of-the-art performance on multiple datasets, outperforming existing methods in terms of both quality and diversity.
+\end{itemize}
 
 \datedsubsection{\textbf{University of California San Diego}}{ Jul. 2024 - Present}
 \role{Visiting Scholar. Advised by \href{https://pages.ucsd.edu/~ztu/}{Prof. Zhuowen Tu}}
 
-Developing a Transformer-Diffusion model for panoptic 3D scene reconstruction from a single RGB image. 
+\datedline{\textbf{\small Single View 3D Scene Reconstruction With Generative Prior}}{In Progress}
+\begin{itemize}
+  \item Proposed a diffusion model for panoptic 3D scene reconstruction from a single RGB image.
+  \item Present a novel generative approach using a tri-plane 2D unet diffusion model conditioned on a projected 3D prior to reconstruct 3D scenes with an efficient yet effective latent space.
+\end{itemize}
 
+\section{\faUsers\ Industry Experience}
 
-% \datedsubsection{\textbf{Nvidia Corporation} Shanghai, China}{Feb. 2024 -- Jun. 2024}
-% \role{Software Development Engineer (Internship)}
+\datedsubsection{\textbf{Nvidia Corporation} Shanghai, China}{Feb. 2024 -- Jun. 2024}
+\role{Software Development Engineer (Internship)}
 
-% Build a LLM-based agent for gameplay with human-like behaviors in most popular games, enabling full automation of the game testing process with minimal configuration. Widely deployed in the production environment. The agent is trained on a large-scale synthetic data.
+\begin{itemize}
+  \item Build a LLM-powered agent for gameplay with human-like behaviors in most popular games, using a text-based game UI descriptor to interact with GPT-4.
+  \item Enhance the language model with a generalizable visual understanding module to improve the agent's performance in various games.
+  \item Widely deployed in production environment, reduced the human labor and time cost significantly, enabling full automation of the game testing process with minimal configuration.
+\end{itemize}
 
-\datedsubsection{\textbf{Deemos Technologies Inc. } Shanghai, China}{Nov. 2022 -- Nov. 2023}
+\datedsubsection{\textbf{Deemos Technologies Inc. } Shanghai, China}{Nov. 2022 -- Feb. 2024}
 \role{Intern Researcher}
 
 \begin{itemize}
   \item Build a real-time 3D interactive avatar system utilizing audio-driven facial expression animation technologies at Global AI developer Conference 2023.
-  \item Build a web application for \href{https://hyperhuman.deemos.com/}{ChatAvatar} project based on \href{https://dl.acm.org/doi/abs/10.1145/3592094}{DreamFace}, which can generate 3D avatars from a single image or text prompt.
+  \item Build a web application for \href{https://hyperhuman.deemos.com/}{ChatAvatar} project based on DreamFace\cite{10.1145/3592094}, which can generate 3D avatars from a single image or text prompt.
 \end{itemize}
 
-\datedsubsection{\textbf{DJI Technology Co., Ltd.} Shanghai, China}{Jun. 2022 -- Nov. 2022}
-\role{Software Development Engineer (Internship)}
+% \datedsubsection{\textbf{DJI Technology Co., Ltd.} Shanghai, China}{Jun. 2022 -- Nov. 2022}
+% \role{Software Development Engineer (Internship)}
 
-Built real-time visualization based on Qt utilizing ADB to collect, analyze, and visualize data from drones. Optimized the existing system for better performance and reduced processing time for data analysis.
+% Built real-time visualization based on Qt utilizing ADB to collect, analyze, and visualize data from drones. Optimized the existing system for better performance and reduced processing time for data analysis.
 
+% \cite{zaharia2012resilient}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -83,42 +98,42 @@ Built real-time visualization based on Qt utilizing ADB to collect, analyze, and
 %  \item main contribution
 %\end{itemize}
 
-\section{\faTrophy\ Honors and Awards}
-\datedline{\textit{\textbf{Special Scholarship} for Undergraduate Overseas Exchange Program}, ShanghaiTech University}{2024}
-\datedline{\textit{\textbf{Merit Student}}, ShanghaiTech University}{2022}
-\datedline{\textit{\textbf{Bronze Medal}}, Award on The 2021 China Collegiate Programming Contest, Harbin Site }{2021}
-\datedline{\textit{\textbf{One-hundred Fourth Place}}, Award on The 2021 ICPC Asia-East Continent Final Contest}{2021}
-
 \section{\faInfo\ Activities}
 
 \datedsubsection{\textbf{GeekPie Association}}{Sep. 2021 - Present}
 \role{President of GeekPie Association}
 
 \begin{itemize}
-  \item Developed a highly regarded web application that simplifies the course selection process for all students at ShanghaiTech University. People can comment and discuss freely at our platform. Check it out at \homepage[coursebench]{https://coursebench.geekpie.club/}.
-  \item Designed and developed the homepage for the Frontier of Life Science and Technology ShanghaiTech University (FoLST2021) conference, helping to increase awareness and participation in the event. Check out the source code at \homepage[github]{https://github.com/Clarivy/FoLST2021}.
+  \item Developed \homepage[CourseBench]{https://coursebench.geekpie.club/}, a highly regarded web application that allow students to comment and discuss about courses.
+  \item Organize tech workshop and provide technical support in algorithms for members and new students.
 \end{itemize}
 
 \datedsubsection{\textbf{CS100: Introduction to Programming}}{2023, 2024}
 \role{Senior Teaching Assistant}
 
 \begin{itemize}
-  \item Designed assignments for student engagement.
-  \item Led bi-weekly \href{https://github.com/GKxxQAQ/CS100-recitations-spring2023}{recitation classes}.
-  \item Collaborated with Professor \href{https://www.xu-lan.com/}{Lan Xu} on grading and exam supervision.
-  \item Recipient of the SIST Outstanding Teaching Assistant Award.
+  \item Give office hours and \href{https://github.com/GKxxQAQ/CS100-recitations-spring2023}{recitation classes};
+  \item Assist with homework assignments and corrections.
+  \item Won the SIST Outstanding Teaching Assistant Award.
 \end{itemize}
 
+
+
+\section{\faTrophy\ Honors and Awards}
+\datedline{\textit{\textbf{Special Scholarship} for Undergraduate Overseas Exchange Program}, ShanghaiTech University}{2024}
+\datedline{\textit{\textbf{Merit Student}}, ShanghaiTech University}{2022}
+\datedline{\textit{\textbf{Bronze Medal}}, Award on The 2021 China Collegiate Programming Contest, Harbin Site }{2021}
+\datedline{\textit{\textbf{One-hundred Fourth Place}}, Award on The 2021 ICPC Asia-East Continent Final Contest}{2021}
 
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: Python > C++ >= Javascript == Typescript > Ruby > MATLAB > C
-  \item Tools: PyTorch, Blender, OpenCV, Git, Vim, VSCode, Jupyter, \LaTeX, Markdown, Docker, Vue, React, FastAPI, Uvicorn, Node.js, Gradio, Rancher, Kubernetes, 
+  \item Programming Languages: Python > C/C++ >= Javascript == Typescript > Ruby > MATLAB
+  \item Tools: PyTorch, Blender, OpenCV, Git, \LaTeX, Docker, Vue, React, FastAPI, Node.js, Rancher, Kubernetes,
 \end{itemize}
 
 %% Reference
 %\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
+\bibliographystyle{IEEETran}
+\bibliography{mycite}
 \end{document}
