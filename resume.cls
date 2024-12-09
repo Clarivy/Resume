@@ -72,7 +72,7 @@
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
+  \centerline{\Huge#1}
   \vspace{1.25ex}
 }
 
